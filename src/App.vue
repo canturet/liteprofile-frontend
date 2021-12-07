@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href="/" class="navbar-brand">bezKoder</a>
+      <a href="/" class="navbar-brand">Liteprofile</a>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/home" class="nav-link">
@@ -47,9 +47,9 @@
       </div>
     </nav>
 
-    <div class="container">
+
       <router-view />
-    </div>
+
   </div>
 </template>
 
@@ -82,3 +82,12 @@ export default {
   }
 };
 </script>
+<style >
+body,html{
+  height: max-content;
+  background-image: url("../src/assets/background.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+</style>
