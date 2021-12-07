@@ -122,14 +122,14 @@
           <div class="col-sm-9">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
-                <table class="table table-hover table-borderless table-dark">
-                  <thead class="thead-light">
+                <table class="table table-hover table-striped table-sm table-borderless">
+                  <thead class="thead-dark">
                     <tr>
                       <th class="thcustomlink" scope="col">Custom Links</th>
                       <th class="thcustomlink" scope="col">Title</th>
                       <th class="thcustomlink" scope="col">Content</th>
                       <th class="thcustomlink" scope="col">Link</th>
-                      <th class="thcustomlink" scope="col">Actions</th>
+                      <th class="thcustomlinkaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -138,7 +138,7 @@
                       <td class="tdcustomlink">Mark</td>
                       <td class="tdcustomlink">Otto</td>
                       <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlink">
+                      <td class="tdcustomlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -162,7 +162,7 @@
                       <td class="tdcustomlink">Jacob</td>
                       <td class="tdcustomlink">Thornton</td>
                       <td class="tdcustomlink">@fat</td>
-                      <td class="tdcustomlink">
+                      <td class="tdcustomlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -186,7 +186,7 @@
                       <td class="tdcustomlink">Larry</td>
                       <td class="tdcustomlink">the Bird</td>
                       <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlink">
+                      <td class="tdcustomlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -207,13 +207,13 @@
                     </tr>
                   </tbody>
                 </table>
-                <table class="table table-hover table-borderless table-dark">
-                  <thead class="thead-light">
+                <table class="table table-hover table-striped table-sm table-borderless">
+                  <thead class="thead-dark">
                     <tr>
                       <th class="thtext" scope="col">Text</th>
                       <th class="thtext" scope="col">Title</th>
                       <th class="thtext" scope="col">Content</th>
-                      <th class="thtext" scope="col">Actions</th>
+                      <th class="thtextaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -223,7 +223,7 @@
                       <td class="tdtext">
                         OtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdto
                       </td>
-                      <td class="tdtext">
+                      <td class="tdtextaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -246,7 +246,7 @@
                       <th class="thtext" scope="row">2</th>
                       <td class="tdtext">Jacob</td>
                       <td class="tdtext">Thornton</td>
-                      <td class="tdtext">
+                      <td class="tdtextaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -269,7 +269,7 @@
                       <th class="thtext" scope="row">3</th>
                       <td class="tdtext">Larry</td>
                       <td class="tdtext">the Bird</td>
-                      <td class="tdtext">
+                      <td class="tdtextaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -290,13 +290,13 @@
                     </tr>
                   </tbody>
                 </table>
-                <table class="table table-hover table-borderless table-dark">
-                  <thead class="thead-light">
+                <table class="table table-hover table-striped table-sm table-borderless">
+                  <thead class="thead-dark">
                     <tr>
                       <th class="thstandartlink" scope="col">Standart Links</th>
                       <th class="thstandartlink" scope="col">Title</th>
                       <th class="thstandartlink" scope="col">Link</th>
-                      <th class="thstandartlink" scope="col">Actions</th>
+                      <th class="thstandartlinkaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -304,7 +304,7 @@
                       <th class="thstandartlink" scope="row">1</th>
                       <td class="tdstandartlink">Mark</td>
                       <td class="tdstandartlink">Otto</td>
-                      <td class="tdstandartlink">
+                      <td class="tdstandartlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -327,7 +327,7 @@
                       <th class="thstandartlink" scope="row">2</th>
                       <td class="tdstandartlink">Jacob</td>
                       <td class="tdstandartlink">Thornton</td>
-                      <td class="tdstandartlink">
+                      <td class="tdstandartlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -350,7 +350,7 @@
                       <th class="thstandartlink" scope="row">3</th>
                       <td class="tdstandartlink">Larry</td>
                       <td class="tdstandartlink">the Bird</td>
-                      <td class="tdstandartlink">
+                      <td class="tdstandartlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -372,19 +372,19 @@
                   </tbody>
                 </table>
 
-                <table class="table table-hover table-borderless table-dark">
-                  <thead class="thead-light">
+                <table class="table table-hover table-striped table-sm table-borderless">
+                  <thead class="thead-dark">
                     <tr>
                       <th class="thvideo" scope="col">Videos</th>
                       <th class="thvideo" scope="col">Link</th>
-                      <th class="thvideo" scope="col">Actions</th>
+                      <th class="thvideoaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th class="thvideo" scope="row">1</th>
                       <td class="tdvideo">Mark</td>
-                      <td class="tdvideo">
+                      <td class="tdvideoaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -406,7 +406,7 @@
                     <tr>
                       <th class="thvideo" scope="row">2</th>
                       <td class="tdvideo">Jacob</td>
-                      <td class="tdvideo">
+                      <td class="tdvideoaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -428,7 +428,7 @@
                     <tr>
                       <th class="thvideo" scope="row">3</th>
                       <td class="tdvideo">Larry</td>
-                      <td class="tdvideo">
+                      <td class="tdvideoaction">
                         <div class="actionbutton">
                           <a
                             type="button"
@@ -1389,6 +1389,24 @@ html {
   white-space: nowrap;
   text-align: left;
 }
+.thtextaction{
+  width: 196px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 25px;
+}
+.tdtextaction{
+   width: 196px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 5px;
+}
 .tdcustomlink,
 .thcustomlink {
   width: 157px;
@@ -1397,6 +1415,24 @@ html {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+}
+.thcustomlinkaction{
+  width: 157px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 25px;
+}
+.tdcustomlinkaction{
+  width: 157px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 5px;
 }
 .tdstandartlink,
 .thstandartlink {
@@ -1407,6 +1443,24 @@ html {
   white-space: nowrap;
   text-align: left;
 }
+.thstandartlinkaction{
+  width: 196px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 25px;
+}
+.tdstandartlinkaction{
+  width: 196px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 5px;
+}
 .tdvideo,
 .thvideo {
   width: 261px;
@@ -1415,6 +1469,24 @@ html {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+}
+.thvideoaction{
+  width: 261px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 25px;
+}
+.tdvideoaction{
+  width: 261px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 5px;
 }
 .linkbutton {
   margin-right: 10px;
