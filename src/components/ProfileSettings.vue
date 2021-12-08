@@ -25,61 +25,20 @@
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
                 <div class="card-body mr-5">
-                  <div
-                    class="d-flex flex-column align-items-center text-center"
-                  >
-                    <img
-                      src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                      alt="Admin"
-                      class="circular--landscape"
-                      width="150"
-                    />
-                    <div class="mt-3">
-                      <h4 class="name">John Doe</h4>
-                      <b class="description">Full Stack Developer</b>
-                      <div class="wrapper">
-                        <div class="icon facebook">
-                          <div class="tooltip">Facebook</div>
-                          <a href="https:\\www.google.com"
-                            ><span
-                              ><i class="fa fa-facebook sociallinks"></i></span
-                          ></a>
-                        </div>
-                        <div class="icon twitter">
-                          <div class="tooltip">Twitter</div>
-                          <a href="https:\\www.google.com"
-                            ><span
-                              ><i class="fa fa-twitter sociallinks"></i></span
-                          ></a>
-                        </div>
-                        <div class="icon instagram">
-                          <div class="tooltip">Instagram</div>
-                          <a href="https:\\www.google.com"
-                            ><span
-                              ><i class="fa fa-instagram sociallinks"></i></span
-                          ></a>
-                        </div>
-                        <div class="icon github">
-                          <div class="tooltip">Github</div>
-                          <a href="https:\\www.google.com"
-                            ><span
-                              ><i class="fa fa-github sociallinks"></i></span
-                          ></a>
-                        </div>
-                        <div class="icon youtube">
-                          <div class="tooltip">Youtube</div>
-                          <a class="sociallinks" href="https:\\www.google.com"
-                            ><span><i class="fa fa-youtube"></i></span
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <button class="custom-btn btn-9">
                     <a
                       class="buttonlink9"
                       data-toggle="modal"
-                      data-target="#customLink"
+                      data-target="#name"
+                      ><span>Name and Description</span></a
+                    >
+                  </button>
+
+                  <button class="custom-btn btn-9">
+                    <a
+                      class="buttonlink9"
+                      data-toggle="modal"
+                      data-target="#customLinkCreate"
                       ><span>Create Custom Link</span></a
                     >
                   </button>
@@ -87,7 +46,7 @@
                     <a
                       class="buttonlink9"
                       data-toggle="modal"
-                      data-target="#text"
+                      data-target="#textCreate"
                       ><span>Create Text</span></a
                     >
                   </button>
@@ -95,7 +54,7 @@
                     <a
                       class="buttonlink9"
                       data-toggle="modal"
-                      data-target="#standartLink"
+                      data-target="#standartLinkCreate"
                       ><span>Create Standart Link</span></a
                     >
                   </button>
@@ -103,7 +62,7 @@
                     <a
                       class="buttonlink9"
                       data-toggle="modal"
-                      data-target="#video"
+                      data-target="#videoCreate"
                       ><span>Create Video</span></a
                     >
                   </button>
@@ -111,8 +70,8 @@
                     <a
                       class="buttonlink9"
                       data-toggle="modal"
-                      data-target="#socialLink"
-                      ><span>Manage Social Links</span></a
+                      data-target="#socialLinkCreate"
+                      ><span>Create Social Link</span></a
                     >
                   </button>
                 </div>
@@ -122,28 +81,39 @@
           <div class="col-sm-9">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
-                <table class="table table-hover table-striped table-sm table-borderless">
+                <table
+                  class="
+                    table table-hover table-striped table-sm table-borderless
+                  "
+                >
+                  <thead class="tableheader">
+                    <tr>
+                      <th scope="col">Your Custom Links</th>
+                    </tr>
+                  </thead>
                   <thead class="thead-dark">
                     <tr>
-                      <th class="thcustomlink" scope="col">Custom Links</th>
                       <th class="thcustomlink" scope="col">Title</th>
                       <th class="thcustomlink" scope="col">Content</th>
                       <th class="thcustomlink" scope="col">Link</th>
+                      <th class="thcustomlink" scope="col">Created Date</th>
+                      <th class="thcustomlink" scope="col">Uptated Date</th>
                       <th class="thcustomlinkaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th class="thcustomlink" scope="row">1</th>
                       <td class="tdcustomlink">Mark</td>
                       <td class="tdcustomlink">Otto</td>
+                      <td class="tdcustomlink">@mdo</td>
+                      <td class="tdcustomlink">@mdo</td>
                       <td class="tdcustomlink">@mdo</td>
                       <td class="tdcustomlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#customLink"
+                            data-target="#customLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -158,16 +128,19 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thcustomlink" scope="row">2</th>
-                      <td class="tdcustomlink">Jacob</td>
+                      <td class="tdcustomlink">
+                        vJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacob
+                      </td>
                       <td class="tdcustomlink">Thornton</td>
                       <td class="tdcustomlink">@fat</td>
+                      <td class="tdcustomlink">@mdo</td>
+                      <td class="tdcustomlink">@mdo</td>
                       <td class="tdcustomlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#customLink"
+                            data-target="#customLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -181,8 +154,10 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <th class="thcustomlink" scope="row">3</th>
+                      <td class="tdcustomlink">Thornton</td>
+                      <td class="tdcustomlink">Thornton</td>
                       <td class="tdcustomlink">Larry</td>
                       <td class="tdcustomlink">the Bird</td>
                       <td class="tdcustomlink">@mdo</td>
@@ -191,7 +166,7 @@
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#customLink"
+                            data-target="#customLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -207,28 +182,39 @@
                     </tr>
                   </tbody>
                 </table>
-                <table class="table table-hover table-striped table-sm table-borderless">
+                <table
+                  class="
+                    table table-hover table-striped table-sm table-borderless
+                  "
+                >
+                  <thead class="tableheader">
+                    <tr>
+                      <th scope="col">Your Texts</th>
+                    </tr>
+                  </thead>
                   <thead class="thead-dark">
                     <tr>
-                      <th class="thtext" scope="col">Text</th>
                       <th class="thtext" scope="col">Title</th>
                       <th class="thtext" scope="col">Content</th>
+                      <th class="thtext" scope="col">Created Date</th>
+                      <th class="thtext" scope="col">Updated Date</th>
                       <th class="thtextaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th class="thtext" scope="row">1</th>
                       <td class="tdtext">asjhdlakjhsdkljah</td>
                       <td class="tdtext">
                         OtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdto
                       </td>
+                      <td class="tdtext">asjhdlakjhsdkljah</td>
+                      <td class="tdtext">asjhdlakjhsdkljah</td>
                       <td class="tdtextaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#text"
+                            data-target="#textEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -243,15 +229,16 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thtext" scope="row">2</th>
                       <td class="tdtext">Jacob</td>
+                      <td class="tdtext">Thornton</td>
+                      <td class="tdtext">Thornton</td>
                       <td class="tdtext">Thornton</td>
                       <td class="tdtextaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#text"
+                            data-target="#textEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -266,15 +253,16 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thtext" scope="row">3</th>
                       <td class="tdtext">Larry</td>
                       <td class="tdtext">the Bird</td>
+                      <td class="tdtext">Thornton</td>
+                      <td class="tdtext">Thornton</td>
                       <td class="tdtextaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#text"
+                            data-target="#textEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -290,18 +278,29 @@
                     </tr>
                   </tbody>
                 </table>
-                <table class="table table-hover table-striped table-sm table-borderless">
+                <table
+                  class="
+                    table table-hover table-striped table-sm table-borderless
+                  "
+                >
+                  <thead class="tableheader">
+                    <tr>
+                      <th scope="col">Your Standart Links</th>
+                    </tr>
+                  </thead>
                   <thead class="thead-dark">
                     <tr>
-                      <th class="thstandartlink" scope="col">Standart Links</th>
                       <th class="thstandartlink" scope="col">Title</th>
                       <th class="thstandartlink" scope="col">Link</th>
+                      <th class="thstandartlink" scope="col">Created Date</th>
+                      <th class="thstandartlink" scope="col">Updated Date</th>
                       <th class="thstandartlinkaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th class="thstandartlink" scope="row">1</th>
+                      <td class="tdstandartlink">Mark</td>
+                      <td class="tdstandartlink">Otto</td>
                       <td class="tdstandartlink">Mark</td>
                       <td class="tdstandartlink">Otto</td>
                       <td class="tdstandartlinkaction">
@@ -309,7 +308,7 @@
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#standartLink"
+                            data-target="#standartLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -324,15 +323,16 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thstandartlink" scope="row">2</th>
                       <td class="tdstandartlink">Jacob</td>
                       <td class="tdstandartlink">Thornton</td>
+                      <td class="tdstandartlink">Mark</td>
+                      <td class="tdstandartlink">Otto</td>
                       <td class="tdstandartlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#standartLink"
+                            data-target="#standartLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -347,15 +347,16 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thstandartlink" scope="row">3</th>
                       <td class="tdstandartlink">Larry</td>
                       <td class="tdstandartlink">the Bird</td>
+                      <td class="tdstandartlink">Mark</td>
+                      <td class="tdstandartlink">Otto</td>
                       <td class="tdstandartlinkaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#standartLink"
+                            data-target="#standartLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -371,25 +372,35 @@
                     </tr>
                   </tbody>
                 </table>
-
-                <table class="table table-hover table-striped table-sm table-borderless">
+                <table
+                  class="
+                    table table-hover table-striped table-sm table-borderless
+                  "
+                >
+                  <thead class="tableheader">
+                    <tr>
+                      <th scope="col">Your Videos</th>
+                    </tr>
+                  </thead>
                   <thead class="thead-dark">
                     <tr>
-                      <th class="thvideo" scope="col">Videos</th>
                       <th class="thvideo" scope="col">Link</th>
+                      <th class="thvideo" scope="col">Created Date</th>
+                      <th class="thvideo" scope="col">Updated Date</th>
                       <th class="thvideoaction" scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th class="thvideo" scope="row">1</th>
+                      <td class="tdvideo">Mark</td>
+                      <td class="tdvideo">Mark</td>
                       <td class="tdvideo">Mark</td>
                       <td class="tdvideoaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#video"
+                            data-target="#videoEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -404,14 +415,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thvideo" scope="row">2</th>
                       <td class="tdvideo">Jacob</td>
+                      <td class="tdvideo">Mark</td>
+                      <td class="tdvideo">Mark</td>
                       <td class="tdvideoaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#video"
+                            data-target="#videoEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -426,14 +438,109 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="thvideo" scope="row">3</th>
                       <td class="tdvideo">Larry</td>
+                      <td class="tdvideo">Mark</td>
+                      <td class="tdvideo">Mark</td>
                       <td class="tdvideoaction">
                         <div class="actionbutton">
                           <a
                             type="button"
                             data-toggle="modal"
-                            data-target="#video"
+                            data-target="#videoEdit"
+                            class="btn btn-primary btn-sm linkbutton"
+                            ><i class="fas fa-edit"></i
+                          ></a>
+                          <a
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#delete"
+                            class="btn btn-primary btn-sm linkbutton"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table
+                  class="
+                    table table-hover table-striped table-sm table-borderless
+                  "
+                >
+                  <thead class="tableheader">
+                    <tr>
+                      <th scope="col">Your Social Links</th>
+                    </tr>
+                  </thead>
+                  <thead class="thead-dark">
+                    <tr>
+                      <th class="thsociallink" scope="col">Social Link</th>
+                      <th class="thsociallink" scope="col">Link</th>
+                      <th class="thsociallink" scope="col">Created Date</th>
+                      <th class="thsociallink" scope="col">Updated Date</th>
+                      <th class="thsociallinkaction" scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tdsociallink">Mark</td>
+                      <td class="tdsociallink">Otto</td>
+                      <td class="tdsociallink">Mark</td>
+                      <td class="tdsociallink">Otto</td>
+                      <td class="tdsociallinkaction">
+                        <div class="actionbutton">
+                          <a
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#socialLinkEdit"
+                            class="btn btn-primary btn-sm linkbutton"
+                            ><i class="fas fa-edit"></i
+                          ></a>
+                          <a
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#delete"
+                            class="btn btn-primary btn-sm linkbutton"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tdsociallink">Jacob</td>
+                      <td class="tdsociallink">Thornton</td>
+                      <td class="tdsociallink">Mark</td>
+                      <td class="tdsociallink">Otto</td>
+                      <td class="tdsociallinkaction">
+                        <div class="actionbutton">
+                          <a
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#socialLinkEdit"
+                            class="btn btn-primary btn-sm linkbutton"
+                            ><i class="fas fa-edit"></i
+                          ></a>
+                          <a
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#delete"
+                            class="btn btn-primary btn-sm linkbutton"
+                            ><i class="fas fa-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tdsociallink">Larry</td>
+                      <td class="tdsociallink">the Bird</td>
+                      <td class="tdsociallink">Mark</td>
+                      <td class="tdsociallink">Otto</td>
+                      <td class="tdsociallinkaction">
+                        <div class="actionbutton">
+                          <a
+                            type="button"
+                            data-toggle="modal"
+                            data-target="#socialLinkEdit"
                             class="btn btn-primary btn-sm linkbutton"
                             ><i class="fas fa-edit"></i
                           ></a>
@@ -454,17 +561,17 @@
           </div>
           <div
             class="modal fade"
-            id="customLink"
+            id="customLinkEdit"
             tabindex="-1"
             role="dialog"
-            aria-labelledby="customLinkTitle"
+            aria-labelledby="customLinkEditTitle"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="CustomLinkLongTitle">
-                    Custom Link
+                  <h5 class="modal-title" id="CustomLinkEditLongTitle">
+                    Edit Custom Link
                   </h5>
                   <button
                     type="button"
@@ -525,16 +632,85 @@
           </div>
           <div
             class="modal fade"
-            id="text"
+            id="customLinkCreate"
             tabindex="-1"
             role="dialog"
-            aria-labelledby="textTitle"
+            aria-labelledby="customLinkCreateTitle"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="textLongTitle">Text</h5>
+                  <h5 class="modal-title" id="CustomLinkCreateLongTitle">
+                    Create New Custom Link
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Title:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Link:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"
+                        >Content:</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="message-text"
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="textEdit"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="textEditTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="textEditLongTitle">Edit Text</h5>
                   <button
                     type="button"
                     class="close"
@@ -584,17 +760,76 @@
           </div>
           <div
             class="modal fade"
-            id="standartLink"
+            id="textCreate"
             tabindex="-1"
             role="dialog"
-            aria-labelledby="standartLinkTitle"
+            aria-labelledby="textCreateTitle"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="standartLinkLongTitle">
-                    Standart Link
+                  <h5 class="modal-title" id="textCreateLongTitle">
+                    Create New Text
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Title:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"
+                        >Content:</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="message-text"
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="standartLinkEdit"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="standartLinkEditTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="standartLinkEditLongTitle">
+                    Edit Standart Link
                   </h5>
                   <button
                     type="button"
@@ -646,16 +881,78 @@
           </div>
           <div
             class="modal fade"
-            id="video"
+            id="standartLinkCreate"
             tabindex="-1"
             role="dialog"
-            aria-labelledby="videoTitle"
+            aria-labelledby="standartLinkCreateTitle"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="videoLongTitle">Video</h5>
+                  <h5 class="modal-title" id="standartLinkCreateLongTitle">
+                    Create New Standart Link
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Title:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Link:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="videoEdit"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="videoEditTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="videoEditLongTitle">
+                    Edit Video
+                  </h5>
                   <button
                     type="button"
                     class="close"
@@ -696,17 +993,67 @@
           </div>
           <div
             class="modal fade"
-            id="socialLink"
+            id="videoCreate"
             tabindex="-1"
             role="dialog"
-            aria-labelledby="socialLinkTitle"
+            aria-labelledby="videoCreateTitle"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="socialLinkLongTitle">
-                    Social Links
+                  <h5 class="modal-title" id="videoCreateLongTitle">
+                    Create New Video
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Link:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="socialLinkEdit"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="socialLinkEditTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="socialLinkEditLongTitle">
+                    Edit Social Link
                   </h5>
                   <button
                     type="button"
@@ -759,17 +1106,17 @@
           </div>
           <div
             class="modal fade"
-            id="delete"
+            id="socialLinkCreate"
             tabindex="-1"
             role="dialog"
-            aria-labelledby="deleteTitle"
+            aria-labelledby="socialLinkCreateTitle"
             aria-hidden="true"
           >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="deleteLongTitle">
-                    Delete
+                  <h5 class="modal-title" id="socialLinkCreateLongTitle">
+                    Create New Social Link
                   </h5>
                   <button
                     type="button"
@@ -781,7 +1128,29 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Are you sure to delete this?
+                  <form>
+                    <div class="form-group">
+                      <label for="sel1">Select list:</label>
+                      <select class="form-control" id="sel1">
+                        <option>Facebook</option>
+                        <option>Instagram</option>
+                        <option>Youtube</option>
+                        <option>Github</option>
+                        <option>Twitter</option>
+                        <option>Linkedin</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >Link:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                  </form>
                 </div>
                 <div class="modal-footer">
                   <button
@@ -791,8 +1160,105 @@
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-danger">
-                    Delete
+                  <button type="button" class="btn btn-success">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="delete"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="deleteTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteLongTitle">Delete</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">Are you sure to delete this?</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="name"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="nameTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="nameLongTitle">
+                    Name and Description
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"
+                      >Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label"
+                      >Description:</label
+                    >
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Photo</label>
+                    <input
+                      type="file"
+                      class="form-control-file"
+                      id="exampleFormControlFile1"
+                    />
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
                   </button>
                 </div>
               </div>
@@ -1131,7 +1597,7 @@ html {
 .btn-9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
-  background: rgb(101, 41, 170);
+  background: #6529aa;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
@@ -1382,15 +1848,16 @@ html {
 }
 .tdtext,
 .thtext {
-  width: 196px;
+  width: 157px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+  color: rgb(255, 255, 255);
 }
-.thtextaction{
-  width: 196px;
+.thtextaction {
+  width: 156px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1398,8 +1865,8 @@ html {
   text-align: right;
   padding-right: 25px;
 }
-.tdtextaction{
-   width: 196px;
+.tdtextaction {
+  width: 156px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1409,15 +1876,16 @@ html {
 }
 .tdcustomlink,
 .thcustomlink {
-  width: 157px;
+  width: 131px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+  color: rgb(255, 255, 255);
 }
-.thcustomlinkaction{
-  width: 157px;
+.thcustomlinkaction {
+  width: 130px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1425,8 +1893,8 @@ html {
   text-align: right;
   padding-right: 25px;
 }
-.tdcustomlinkaction{
-  width: 157px;
+.tdcustomlinkaction {
+  width: 130px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1436,15 +1904,16 @@ html {
 }
 .tdstandartlink,
 .thstandartlink {
-  width: 196px;
+  width: 157px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+  color: rgb(255, 255, 255);
 }
-.thstandartlinkaction{
-  width: 196px;
+.thstandartlinkaction {
+  width: 156px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1452,8 +1921,37 @@ html {
   text-align: right;
   padding-right: 25px;
 }
-.tdstandartlinkaction{
-  width: 196px;
+
+.tdstandartlinkaction {
+  width: 156px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 5px;
+}
+.tdsociallink,
+.thsociallink {
+  width: 157px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.thsociallinkaction {
+  width: 156px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 25px;
+}
+.tdsociallinkaction {
+  width: 156px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1463,15 +1961,17 @@ html {
 }
 .tdvideo,
 .thvideo {
-  width: 261px;
+  width: 196px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+  color: rgb(255, 255, 255);
 }
-.thvideoaction{
-  width: 261px;
+
+.thvideoaction {
+  width: 195px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1479,8 +1979,8 @@ html {
   text-align: right;
   padding-right: 25px;
 }
-.tdvideoaction{
-  width: 261px;
+.tdvideoaction {
+  width: 195px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1488,16 +1988,22 @@ html {
   text-align: right;
   padding-right: 5px;
 }
+table {
+  background-color: #aa2970;
+}
+thead {
+  background-color: rgb(90, 90, 90);
+}
 .linkbutton {
   margin-right: 10px;
   background-color: rgb(0, 0, 0);
-  border-color: #c02e2e;
+  border-color: #b619ae;
   color: #e1306c;
 }
 
 .linkbutton:hover {
-  background-color: #cead19;
-  border-color: #c02e2e;
+  background-color: #ce2519;
+  border-color: #b619ae;
 }
 
 .linkbutton:hover:active {
@@ -1510,6 +2016,10 @@ html {
 }
 .description {
   color: rgb(0, 0, 0);
+}
+.tableheader {
+  color: rgb(243, 243, 243);
+  background-color: rgb(55, 97, 212);
 }
 </style>
 <style >
