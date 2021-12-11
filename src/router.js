@@ -4,6 +4,7 @@ import Login from "./components/Login.vue";
 import Register from "./components/Register.vue";
 import UserProfile from "./components/UserProfile.vue";
 import ProfileSettings from "./components/ProfileSettings.vue";
+import HomePage from "./components/HomePage.vue"
 // lazy-loaded
 const Profile = () => import("./components/Profile.vue")
 const BoardAdmin = () => import("./components/BoardAdmin.vue")
@@ -35,6 +36,10 @@ const routes = [
   {
     path: "/ProfileSettings",
     component: ProfileSettings,
+  },
+  {
+    path:"/HomePage",
+    component: HomePage,
   },
   {
     path: "/profile",
