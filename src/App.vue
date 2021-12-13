@@ -2,8 +2,8 @@
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light navbar-float">
       <div class="container">
-        <a href="index.html" class="navbar-brand"
-          >Digi<span class="text-primary">Gram.</span></a
+        <a href="/HomePage" class="navbar-brand"
+          >Lite<span class="text-primary">Profile</span></a
         >
 
         <button
@@ -21,25 +21,44 @@
           <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
             <li class="nav-item active">
               <router-link to="/HomePage" class="nav-link">
-                <font-awesome-icon icon="home" /> Home
+                Ana Sayfa
               </router-link>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
+              <a href="/UserProfile" class="nav-link">Profil</a>
             </li>
             <li class="nav-item">
-              <a href="services.html" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">News</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
+              <a href="/ProfileSettings" class="nav-link">Profili Düzenle</a>
             </li>
           </ul>
 
           <div class="ml-auto">
-            <a href="#" class="btn btn-outline rounded-pill">Get a Quote</a>
+            <div v-if="!currentUser" class="navbar-nav">
+              <li class="nav-item">
+                <router-link to="/register" class="nav-link">
+                  Kayıt Ol
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/login" class="nav-link">
+                  Giriş Yap
+                </router-link>
+              </li>
+            </div>
+          </div>
+          <div class="ml-auto">
+            <div v-if="currentUser" class="navbar-nav">
+              <li class="nav-item">
+                <router-link to="/profile" class="nav-link">
+                  {{ currentUser.username }}
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" @click.prevent="logOut">
+                  <font-awesome-icon icon="sign-out-alt" /> Çıkış Yap
+                </a>
+              </li>
+            </div>
           </div>
         </div>
       </div>
@@ -48,49 +67,36 @@
     <router-view />
     <footer class="page-footer">
       <div class="container">
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center">
           <div class="col-lg-3 py-3">
-            <h3>Digi<span class="text-primary">Gram.</span></h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Lite<span class="text-primary">Profile</span></h3>
+            <p>Bizlere mail üzerinden ulaşabilirsiniz.</p>
 
-            <p><a href="#">digigram@mail.com</a></p>
-            <p><a href="#">+00 1122 3344 5566</a></p>
+            <p><a href="#">liteprofile01@gmail.com</a></p>
           </div>
           <div class="col-lg-3 py-3">
-            <h5>Quick Links</h5>
+            <h5>Linkler</h5>
             <ul class="footer-menu">
-              <li><a href="#">How it works</a></li>
-              <li><a href="#">Security</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Report a Bug</a></li>
+              <li><a href="#">Kayıt Ol</a></li>
+              <li><a href="#">Giriş Yap</a></li>
+              <li><a href="#">Profil</a></li>
+              <li><a href="#">Profili Düzenle</a></li>
+              <li><a href="#">Çıkış Yap</a></li>
             </ul>
           </div>
+
           <div class="col-lg-3 py-3">
-            <h5>About Us</h5>
-            <ul class="footer-menu">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Our Teams</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">News & Press</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 py-3">
-            <h5>Subscribe</h5>
-            <form action="#">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter your mail.."
-              />
-            </form>
+            <h5>Sosyal Medya Hesaplarımız</h5>
 
             <div class="sosmed-button mt-4">
               <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-google"></span></a>
-              <a href="#"><span class="mai-logo-linkedin"></span></a>
+              <a href="#" class="ml-2"
+                ><span class="mai-logo-twitter"></span
+              ></a>
+              <a href="#" class="ml-2"><span class="mai-logo-google"></span></a>
+              <a href="#" class="ml-2"
+                ><span class="mai-logo-linkedin"></span
+              ></a>
             </div>
           </div>
         </div>
@@ -98,16 +104,12 @@
         <div class="row">
           <div class="col-sm-6 py-2">
             <p id="copyright">
-              &copy; 2020 <a href="https://macodeid.com/">MACode ID</a>. All
-              rights reserved
+              &copy; 2021 LiteProfile. Tüm haklarınız saklıdır.
             </p>
           </div>
           <div class="col-sm-6 py-2 text-right">
             <div class="d-inline-block px-3">
               <a href="#">Privacy</a>
-            </div>
-            <div class="d-inline-block px-3">
-              <a href="#">Contact Us</a>
             </div>
           </div>
         </div>
