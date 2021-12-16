@@ -21,541 +21,618 @@
     <div class="container">
       <div class="main-body">
         <div class="row row-no-gutters">
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
                 <div class="card-body mr-5">
-                  <button class="custom-btn btn-9">
-                    <a
-                      class="buttonlink9"
-                      data-toggle="modal"
-                      data-target="#name"
-                      ><span>Name and Description</span></a
-                    >
-                  </button>
+                  <div class="card">
+                    <div class="card-body links">
+                      <div
+                        class="
+                          d-flex
+                          flex-column
+                          align-items-center
+                          text-center
+                        "
+                      >
+                        <h4>Menu</h4>
+                        <button class="custom-btn btn-9">
+                          <a
+                            class="buttonlink9"
+                            data-toggle="modal"
+                            data-target="#name"
+                            ><span>Name and Description</span></a
+                          >
+                        </button>
 
-                  <button class="custom-btn btn-9">
-                    <a
-                      class="buttonlink9"
-                      data-toggle="modal"
-                      data-target="#customLinkCreate"
-                      ><span>Create Custom Link</span></a
-                    >
-                  </button>
-                  <button class="custom-btn btn-9">
-                    <a
-                      class="buttonlink9"
-                      data-toggle="modal"
-                      data-target="#textCreate"
-                      ><span>Create Text</span></a
-                    >
-                  </button>
-                  <button class="custom-btn btn-9">
-                    <a
-                      class="buttonlink9"
-                      data-toggle="modal"
-                      data-target="#standartLinkCreate"
-                      ><span>Create Standart Link</span></a
-                    >
-                  </button>
-                  <button class="custom-btn btn-9">
-                    <a
-                      class="buttonlink9"
-                      data-toggle="modal"
-                      data-target="#videoCreate"
-                      ><span>Create Video</span></a
-                    >
-                  </button>
-                  <button class="custom-btn btn-9">
-                    <a
-                      class="buttonlink9"
-                      data-toggle="modal"
-                      data-target="#socialLinkCreate"
-                      ><span>Create Social Link</span></a
-                    >
-                  </button>
+                        <button class="custom-btn btn-9">
+                          <a
+                            class="buttonlink9"
+                            data-toggle="modal"
+                            data-target="#customLinkCreate"
+                            ><span>Create Custom Link</span></a
+                          >
+                        </button>
+                        <button class="custom-btn btn-9">
+                          <a
+                            class="buttonlink9"
+                            data-toggle="modal"
+                            data-target="#textCreate"
+                            ><span>Create Text</span></a
+                          >
+                        </button>
+                        <button class="custom-btn btn-9">
+                          <a
+                            class="buttonlink9"
+                            data-toggle="modal"
+                            data-target="#standartLinkCreate"
+                            ><span>Create Standart Link</span></a
+                          >
+                        </button>
+                        <button class="custom-btn btn-9">
+                          <a
+                            class="buttonlink9"
+                            data-toggle="modal"
+                            data-target="#videoCreate"
+                            ><span>Create Video</span></a
+                          >
+                        </button>
+                        <button class="custom-btn btn-9">
+                          <a
+                            class="buttonlink9"
+                            data-toggle="modal"
+                            data-target="#socialLinkCreate"
+                            ><span>Create Social Link</span></a
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-10">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
-                <table
-                  class="
-                    table table-hover table-striped table-sm table-borderless
-                  "
-                >
-                  <thead class="tableheader">
-                    <tr>
-                      <th scope="col">Your Custom Links</th>
-                    </tr>
-                  </thead>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th class="thcustomlink" scope="col">Title</th>
-                      <th class="thcustomlink" scope="col">Content</th>
-                      <th class="thcustomlink" scope="col">Link</th>
-                      <th class="thcustomlink" scope="col">Created Date</th>
-                      <th class="thcustomlink" scope="col">Uptated Date</th>
-                      <th class="thcustomlinkaction" scope="col">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="tdcustomlink">Mark</td>
-                      <td class="tdcustomlink">Otto</td>
-                      <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#customLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdcustomlink">
-                        vJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacob
-                      </td>
-                      <td class="tdcustomlink">Thornton</td>
-                      <td class="tdcustomlink">@fat</td>
-                      <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#customLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
+                <div class="card-body ">
+                  <div class="card">
+                    <div class="card-body">
+                      <div
+                        class="
+                          d-flex
+                          flex-column
+                          align-items-center
+                          text-center
+                        "
+                      >
+                        <table
+                          class="
+                            table
+                            table-hover
+                            table-striped
+                            table-sm
+                            table-borderless
+                          "
+                        >
+                          <thead class="tableheader">
+                            <tr>
+                              <th scope="col">Your Custom Links</th>
+                            </tr>
+                          </thead>
+                          <thead class="thead-dark">
+                            <tr>
+                              <th class="thcustomlink" scope="col">Title</th>
+                              <th class="thcustomlink" scope="col">Content</th>
+                              <th class="thcustomlink" scope="col">Link</th>
+                              <th class="thcustomlink" scope="col">
+                                Created Date
+                              </th>
+                              <th class="thcustomlink" scope="col">
+                                Uptated Date
+                              </th>
+                              <th class="thcustomlinkaction" scope="col">
+                                Actions
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="tdcustomlink">Mark</td>
+                              <td class="tdcustomlink">Otto</td>
+                              <td class="tdcustomlink">@mdo</td>
+                              <td class="tdcustomlink">@mdo</td>
+                              <td class="tdcustomlink">@mdo</td>
+                              <td class="tdcustomlinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#customLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdcustomlink">
+                                vJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacob
+                              </td>
+                              <td class="tdcustomlink">Thornton</td>
+                              <td class="tdcustomlink">@fat</td>
+                              <td class="tdcustomlink">@mdo</td>
+                              <td class="tdcustomlink">@mdo</td>
+                              <td class="tdcustomlinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#customLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
 
-                    <tr>
-                      <td class="tdcustomlink">Thornton</td>
-                      <td class="tdcustomlink">Thornton</td>
-                      <td class="tdcustomlink">Larry</td>
-                      <td class="tdcustomlink">the Bird</td>
-                      <td class="tdcustomlink">@mdo</td>
-                      <td class="tdcustomlinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#customLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table
-                  class="
-                    table table-hover table-striped table-sm table-borderless
-                  "
-                >
-                  <thead class="tableheader">
-                    <tr>
-                      <th scope="col">Your Texts</th>
-                    </tr>
-                  </thead>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th class="thtext" scope="col">Title</th>
-                      <th class="thtext" scope="col">Content</th>
-                      <th class="thtext" scope="col">Created Date</th>
-                      <th class="thtext" scope="col">Updated Date</th>
-                      <th class="thtextaction" scope="col">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="tdtext">asjhdlakjhsdkljah</td>
-                      <td class="tdtext">
-                        OtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdto
-                      </td>
-                      <td class="tdtext">asjhdlakjhsdkljah</td>
-                      <td class="tdtext">asjhdlakjhsdkljah</td>
-                      <td class="tdtextaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#textEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdtext">Jacob</td>
-                      <td class="tdtext">Thornton</td>
-                      <td class="tdtext">Thornton</td>
-                      <td class="tdtext">Thornton</td>
-                      <td class="tdtextaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#textEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdtext">Larry</td>
-                      <td class="tdtext">the Bird</td>
-                      <td class="tdtext">Thornton</td>
-                      <td class="tdtext">Thornton</td>
-                      <td class="tdtextaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#textEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table
-                  class="
-                    table table-hover table-striped table-sm table-borderless
-                  "
-                >
-                  <thead class="tableheader">
-                    <tr>
-                      <th scope="col">Your Standart Links</th>
-                    </tr>
-                  </thead>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th class="thstandartlink" scope="col">Title</th>
-                      <th class="thstandartlink" scope="col">Link</th>
-                      <th class="thstandartlink" scope="col">Created Date</th>
-                      <th class="thstandartlink" scope="col">Updated Date</th>
-                      <th class="thstandartlinkaction" scope="col">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="tdstandartlink">Mark</td>
-                      <td class="tdstandartlink">Otto</td>
-                      <td class="tdstandartlink">Mark</td>
-                      <td class="tdstandartlink">Otto</td>
-                      <td class="tdstandartlinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#standartLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdstandartlink">Jacob</td>
-                      <td class="tdstandartlink">Thornton</td>
-                      <td class="tdstandartlink">Mark</td>
-                      <td class="tdstandartlink">Otto</td>
-                      <td class="tdstandartlinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#standartLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdstandartlink">Larry</td>
-                      <td class="tdstandartlink">the Bird</td>
-                      <td class="tdstandartlink">Mark</td>
-                      <td class="tdstandartlink">Otto</td>
-                      <td class="tdstandartlinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#standartLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table
-                  class="
-                    table table-hover table-striped table-sm table-borderless
-                  "
-                >
-                  <thead class="tableheader">
-                    <tr>
-                      <th scope="col">Your Videos</th>
-                    </tr>
-                  </thead>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th class="thvideo" scope="col">Link</th>
-                      <th class="thvideo" scope="col">Created Date</th>
-                      <th class="thvideo" scope="col">Updated Date</th>
-                      <th class="thvideoaction" scope="col">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideoaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#videoEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdvideo">Jacob</td>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideoaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#videoEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdvideo">Larry</td>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideo">Mark</td>
-                      <td class="tdvideoaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#videoEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table
-                  class="
-                    table table-hover table-striped table-sm table-borderless
-                  "
-                >
-                  <thead class="tableheader">
-                    <tr>
-                      <th scope="col">Your Social Links</th>
-                    </tr>
-                  </thead>
-                  <thead class="thead-dark">
-                    <tr>
-                      <th class="thsociallink" scope="col">Social Link</th>
-                      <th class="thsociallink" scope="col">Link</th>
-                      <th class="thsociallink" scope="col">Created Date</th>
-                      <th class="thsociallink" scope="col">Updated Date</th>
-                      <th class="thsociallinkaction" scope="col">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="tdsociallink">Mark</td>
-                      <td class="tdsociallink">Otto</td>
-                      <td class="tdsociallink">Mark</td>
-                      <td class="tdsociallink">Otto</td>
-                      <td class="tdsociallinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#socialLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdsociallink">Jacob</td>
-                      <td class="tdsociallink">Thornton</td>
-                      <td class="tdsociallink">Mark</td>
-                      <td class="tdsociallink">Otto</td>
-                      <td class="tdsociallinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#socialLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tdsociallink">Larry</td>
-                      <td class="tdsociallink">the Bird</td>
-                      <td class="tdsociallink">Mark</td>
-                      <td class="tdsociallink">Otto</td>
-                      <td class="tdsociallinkaction">
-                        <div class="actionbutton">
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#socialLinkEdit"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                          <a
-                            type="button"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            class="btn btn-primary btn-sm linkbutton"
-                            ><i class="fas fa-trash"></i
-                          ></a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                            <tr>
+                              <td class="tdcustomlink">Thornton</td>
+                              <td class="tdcustomlink">Thornton</td>
+                              <td class="tdcustomlink">Larry</td>
+                              <td class="tdcustomlink">the Bird</td>
+                              <td class="tdcustomlink">@mdo</td>
+                              <td class="tdcustomlinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#customLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table
+                          class="
+                            table
+                            table-hover
+                            table-striped
+                            table-sm
+                            table-borderless
+                          "
+                        >
+                          <thead class="tableheader">
+                            <tr>
+                              <th scope="col">Your Texts</th>
+                            </tr>
+                          </thead>
+                          <thead class="thead-dark">
+                            <tr>
+                              <th class="thtext" scope="col">Title</th>
+                              <th class="thtext" scope="col">Content</th>
+                              <th class="thtext" scope="col">Created Date</th>
+                              <th class="thtext" scope="col">Updated Date</th>
+                              <th class="thtextaction" scope="col">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="tdtext">asjhdlakjhsdkljah</td>
+                              <td class="tdtext">
+                                OtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdtoOtqwedsdasdasdasdasdasdto
+                              </td>
+                              <td class="tdtext">asjhdlakjhsdkljah</td>
+                              <td class="tdtext">asjhdlakjhsdkljah</td>
+                              <td class="tdtextaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#textEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdtext">Jacob</td>
+                              <td class="tdtext">Thornton</td>
+                              <td class="tdtext">Thornton</td>
+                              <td class="tdtext">Thornton</td>
+                              <td class="tdtextaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#textEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdtext">Larry</td>
+                              <td class="tdtext">the Bird</td>
+                              <td class="tdtext">Thornton</td>
+                              <td class="tdtext">Thornton</td>
+                              <td class="tdtextaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#textEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table
+                          class="
+                            table
+                            table-hover
+                            table-striped
+                            table-sm
+                            table-borderless
+                          "
+                        >
+                          <thead class="tableheader">
+                            <tr>
+                              <th scope="col">Your Standart Links</th>
+                            </tr>
+                          </thead>
+                          <thead class="thead-dark">
+                            <tr>
+                              <th class="thstandartlink" scope="col">Title</th>
+                              <th class="thstandartlink" scope="col">Link</th>
+                              <th class="thstandartlink" scope="col">
+                                Created Date
+                              </th>
+                              <th class="thstandartlink" scope="col">
+                                Updated Date
+                              </th>
+                              <th class="thstandartlinkaction" scope="col">
+                                Actions
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="tdstandartlink">Mark</td>
+                              <td class="tdstandartlink">Otto</td>
+                              <td class="tdstandartlink">Mark</td>
+                              <td class="tdstandartlink">Otto</td>
+                              <td class="tdstandartlinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#standartLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdstandartlink">Jacob</td>
+                              <td class="tdstandartlink">Thornton</td>
+                              <td class="tdstandartlink">Mark</td>
+                              <td class="tdstandartlink">Otto</td>
+                              <td class="tdstandartlinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#standartLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdstandartlink">Larry</td>
+                              <td class="tdstandartlink">the Bird</td>
+                              <td class="tdstandartlink">Mark</td>
+                              <td class="tdstandartlink">Otto</td>
+                              <td class="tdstandartlinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#standartLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table
+                          class="
+                            table
+                            table-hover
+                            table-striped
+                            table-sm
+                            table-borderless
+                          "
+                        >
+                          <thead class="tableheader">
+                            <tr>
+                              <th scope="col">Your Videos</th>
+                            </tr>
+                          </thead>
+                          <thead class="thead-dark">
+                            <tr>
+                              <th class="thvideo" scope="col">Link</th>
+                              <th class="thvideo" scope="col">Created Date</th>
+                              <th class="thvideo" scope="col">Updated Date</th>
+                              <th class="thvideoaction" scope="col">Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideoaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#videoEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdvideo">Jacob</td>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideoaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#videoEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdvideo">Larry</td>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideo">Mark</td>
+                              <td class="tdvideoaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#videoEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table
+                          class="
+                            table
+                            table-hover
+                            table-striped
+                            table-sm
+                            table-borderless
+                          "
+                        >
+                          <thead class="tableheader">
+                            <tr>
+                              <th scope="col">Your Social Links</th>
+                            </tr>
+                          </thead>
+                          <thead class="thead-dark">
+                            <tr>
+                              <th class="thsociallink" scope="col">
+                                Social Link
+                              </th>
+                              <th class="thsociallink" scope="col">Link</th>
+                              <th class="thsociallink" scope="col">
+                                Created Date
+                              </th>
+                              <th class="thsociallink" scope="col">
+                                Updated Date
+                              </th>
+                              <th class="thsociallinkaction" scope="col">
+                                Actions
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="tdsociallink">Mark</td>
+                              <td class="tdsociallink">Otto</td>
+                              <td class="tdsociallink">Mark</td>
+                              <td class="tdsociallink">Otto</td>
+                              <td class="tdsociallinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#socialLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdsociallink">
+                                JacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacobJacob
+                              </td>
+                              <td class="tdsociallink">
+                                ThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThorntonThornton
+                              </td>
+                              <td class="tdsociallink">
+                                MarkMarkMarkMarkMarkMarkMarkMarkMarkMarkMark
+                              </td>
+                              <td class="tdsociallink">
+                                OttoOttoOttoOttoOttoOttoOttoOttoOttoOtto
+                              </td>
+                              <td class="tdsociallinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#socialLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="tdsociallink">Larry</td>
+                              <td class="tdsociallink">the Bird</td>
+                              <td class="tdsociallink">Mark</td>
+                              <td class="tdsociallink">Otto</td>
+                              <td class="tdsociallinkaction">
+                                <div class="actionbutton">
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#socialLinkEdit"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-edit"></i
+                                  ></a>
+                                  <a
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#delete"
+                                    class="btn btn-primary btn-sm linkbutton"
+                                    ><i class="fas fa-trash"></i
+                                  ></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1989,7 +2066,7 @@ html {
   padding-right: 5px;
 }
 table {
-  background-color: #aa2970;
+  background-color: #a53c85;
 }
 thead {
   background-color: rgb(90, 90, 90);
@@ -2018,8 +2095,13 @@ thead {
   color: rgb(0, 0, 0);
 }
 .tableheader {
-  color: rgb(243, 243, 243);
-  background-color: rgb(55, 97, 212);
+  color: #a53c85;
+  background-color: rgb(255, 255, 255);
+}
+.links {
+  padding: 40px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 </style>
 <style >

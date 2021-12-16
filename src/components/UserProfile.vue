@@ -25,13 +25,8 @@
           <div class="col-sm-8">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
-                <img
-                  src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                  alt="Admin"
-                  class="circular--landscape"
-                  width="150"
-                />
-                <div class="mt-3">
+            
+                <div class="mt-5 mb-3">
                   <h4 class="name">John Doe</h4>
                   <b class="description">Full Stack Developer</b>
                 </div>
@@ -71,7 +66,7 @@
             </div>
             <vue-collapsible-panel-group
               class="collapsecontainer card"
-              base-color="#683937"
+              base-color="#580698"
             >
               <vue-collapsible-panel :expanded="false">
                 <template #title> Hakkımda kısaca </template>
@@ -128,7 +123,7 @@
                 ><span>Read More</span></a
               >
             </button>
-            <div class="embed-responsive embed-responsive-16by9 video">
+            <div class="embed-responsive embed-responsive-16by9 video mb-5">
               <iframe
                 class="embed-responsive-item"
                 src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
@@ -424,7 +419,7 @@ html {
   z-index: 2;
   transition: all 0.3s ease;
   overflow: hidden;
-  background: rgb(0, 162, 255);
+  background: #a53c85;
   color: rgb(255, 255, 255);
   line-height: 50px;
   height: 50px;
@@ -467,7 +462,7 @@ html {
 .btn-9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
-  background: rgb(101, 41, 170);
+  background: #6529aa;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
@@ -532,14 +527,14 @@ html {
 
 .linkbutton {
   margin-right: 10px;
-  background-color: rgb(0, 0, 0);
-  border-color: #c02e2e;
-  color: #e1306c;
+  background-color: #a53c85;
+  border-color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .linkbutton:hover {
-  background-color: #cead19;
-  border-color: #c02e2e;
+  background-color: blueviolet;
+  border-color: #ffffff;
 }
 
 .linkbutton:hover:active {
@@ -572,9 +567,9 @@ html {
   margin-bottom: 25px;
 }
 .name {
-  color: white;
+  color: blueviolet;
 }
 .description {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 </style>
