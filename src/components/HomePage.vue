@@ -15,7 +15,7 @@
               <div class="input-group">
                 <input type="search" class="form-control" />
                 <span class="input-group-addon"
-                  ><input type="submit" value="Search" class="btn btn-primary"
+                  ><input type="submit" value="Ara" class="btn btn-primary"
                 /></span>
               </div>
             </form>
@@ -402,8 +402,8 @@
             <img src="../assets/img/clients/paypal.png" alt="" />
           </div>
           <div class="item wow zoomIn">
-            <img src="../assets/img/clients/mailchimp.png" alt="" />
-          </div>
+              <img src="../assets/img/clients/mailchimp.png" alt="" />
+            </div>
         </div>
       </div>
       <!-- .container-fluid -->

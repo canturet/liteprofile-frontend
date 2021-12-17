@@ -522,7 +522,7 @@ html {
   outline: none;
   text-decoration: none;
   border: none;
-  color: rgb(0, 0, 0);
+  color: #a53c85;
 }
 
 .linkbutton {
@@ -567,9 +567,13 @@ html {
   margin-bottom: 25px;
 }
 .name {
-  color: blueviolet;
+  color: #a53c85;
 }
 .description {
   color: rgb(255, 255, 255);
+}
+.containermain{
+  margin-bottom:100px;
+  margin-top:35px; 
 }
 </style>
