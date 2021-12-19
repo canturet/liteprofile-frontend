@@ -95,9 +95,7 @@
               Seni aramak isteyenler senin hakkında kolayca bilgi sahibi
               olsunlar.
             </p>
-            <div class="img-place mb-3">
-              <img src="../assets/img/testi_image.png" alt="" />
-            </div>
+            
           </div>
         </div>
       </div>

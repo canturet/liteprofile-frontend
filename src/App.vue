@@ -138,7 +138,7 @@ export default {
 body,
 html {
   height: max-content;
-  background-image: url("../src/assets/background_2.png");
+  background-image: url("../src/assets/blue-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

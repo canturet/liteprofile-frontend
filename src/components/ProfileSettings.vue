@@ -35,13 +35,13 @@
                           text-center
                         "
                       >
-                        <h4>Menu</h4>
+                        <h4>Oluştur Menüsü</h4>
                         <button class="custom-btn btn-9">
                           <a
                             class="buttonlink9"
                             data-toggle="modal"
                             data-target="#name"
-                            ><span>Name and Description</span></a
+                            ><span>İsim ve Açıklama</span></a
                           >
                         </button>
 
@@ -50,7 +50,7 @@
                             class="buttonlink9"
                             data-toggle="modal"
                             data-target="#customLinkCreate"
-                            ><span>Create Custom Link</span></a
+                            ><span>Özelleştirilmiş Bağlantı</span></a
                           >
                         </button>
                         <button class="custom-btn btn-9">
@@ -58,7 +58,7 @@
                             class="buttonlink9"
                             data-toggle="modal"
                             data-target="#textCreate"
-                            ><span>Create Text</span></a
+                            ><span>Yeni Yazı</span></a
                           >
                         </button>
                         <button class="custom-btn btn-9">
@@ -66,7 +66,7 @@
                             class="buttonlink9"
                             data-toggle="modal"
                             data-target="#standartLinkCreate"
-                            ><span>Create Standart Link</span></a
+                            ><span>Standart Bağlantı</span></a
                           >
                         </button>
                         <button class="custom-btn btn-9">
@@ -74,7 +74,7 @@
                             class="buttonlink9"
                             data-toggle="modal"
                             data-target="#videoCreate"
-                            ><span>Create Video</span></a
+                            ><span>Video</span></a
                           >
                         </button>
                         <button class="custom-btn btn-9">
@@ -82,7 +82,7 @@
                             class="buttonlink9"
                             data-toggle="modal"
                             data-target="#socialLinkCreate"
-                            ><span>Create Social Link</span></a
+                            ><span>Sosyal Medya Bağlantısı</span></a
                           >
                         </button>
                       </div>
@@ -95,7 +95,7 @@
           <div class="col-sm-10">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
-                <div class="card-body ">
+                <div class="card-body">
                   <div class="card">
                     <div class="card-body">
                       <div
@@ -117,22 +117,22 @@
                         >
                           <thead class="tableheader">
                             <tr>
-                              <th scope="col">Your Custom Links</th>
+                              <th scope="col">Tüm Özelleştirilmiş Bağlantıların</th>
                             </tr>
                           </thead>
-                          <thead class="thead-dark">
+                          <thead class="thead-light">
                             <tr>
-                              <th class="thcustomlink" scope="col">Title</th>
-                              <th class="thcustomlink" scope="col">Content</th>
-                              <th class="thcustomlink" scope="col">Link</th>
+                              <th class="thcustomlink" scope="col">Başlık</th>
+                              <th class="thcustomlink" scope="col">İçerik</th>
+                              <th class="thcustomlink" scope="col">Bağlantı</th>
                               <th class="thcustomlink" scope="col">
-                                Created Date
+                                Oluşturma Tarihi
                               </th>
                               <th class="thcustomlink" scope="col">
-                                Uptated Date
+                                Güncellenme Tarihi
                               </th>
                               <th class="thcustomlinkaction" scope="col">
-                                Actions
+                                Seçenekler
                               </th>
                             </tr>
                           </thead>
@@ -149,14 +149,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#customLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -176,14 +176,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#customLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -202,14 +202,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#customLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -223,21 +223,21 @@
                             table-hover
                             table-striped
                             table-sm
-                            table-borderless
+                            table-borderless  
                           "
                         >
                           <thead class="tableheader">
                             <tr>
-                              <th scope="col">Your Texts</th>
+                              <th scope="col">Tüm Yazıların</th>
                             </tr>
                           </thead>
-                          <thead class="thead-dark">
+                          <thead class="thead-light">
                             <tr>
-                              <th class="thtext" scope="col">Title</th>
-                              <th class="thtext" scope="col">Content</th>
-                              <th class="thtext" scope="col">Created Date</th>
-                              <th class="thtext" scope="col">Updated Date</th>
-                              <th class="thtextaction" scope="col">Actions</th>
+                              <th class="thtext" scope="col">Başlık</th>
+                              <th class="thtext" scope="col">İçerik</th>
+                              <th class="thtext" scope="col">Oluşturma Tarihi</th>
+                              <th class="thtext" scope="col">Düzenlenme Tarihi</th>
+                              <th class="thtextaction" scope="col">Seçenekler</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -254,14 +254,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#textEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -278,14 +278,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#textEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -302,14 +302,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#textEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -328,21 +328,21 @@
                         >
                           <thead class="tableheader">
                             <tr>
-                              <th scope="col">Your Standart Links</th>
+                              <th scope="col">Tüm Standart Bağlantıların</th>
                             </tr>
                           </thead>
-                          <thead class="thead-dark">
+                          <thead class="thead-light">
                             <tr>
-                              <th class="thstandartlink" scope="col">Title</th>
-                              <th class="thstandartlink" scope="col">Link</th>
+                              <th class="thstandartlink" scope="col">Başlık</th>
+                              <th class="thstandartlink" scope="col">Bağlantı</th>
                               <th class="thstandartlink" scope="col">
-                                Created Date
+                                Oluşturma Tarihi
                               </th>
                               <th class="thstandartlink" scope="col">
-                                Updated Date
+                                Güncellenme Tarihi
                               </th>
                               <th class="thstandartlinkaction" scope="col">
-                                Actions
+                                Seçenekler
                               </th>
                             </tr>
                           </thead>
@@ -358,14 +358,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#standartLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -382,14 +382,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#standartLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -406,14 +406,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#standartLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -432,15 +432,15 @@
                         >
                           <thead class="tableheader">
                             <tr>
-                              <th scope="col">Your Videos</th>
+                              <th scope="col">Tüm Videoların</th>
                             </tr>
                           </thead>
-                          <thead class="thead-dark">
+                          <thead class="thead-light">
                             <tr>
-                              <th class="thvideo" scope="col">Link</th>
-                              <th class="thvideo" scope="col">Created Date</th>
-                              <th class="thvideo" scope="col">Updated Date</th>
-                              <th class="thvideoaction" scope="col">Actions</th>
+                              <th class="thvideo" scope="col">Bağlantı</th>
+                              <th class="thvideo" scope="col">Oluşturma Tarihi</th>
+                              <th class="thvideo" scope="col">Güncellenme Tarihi</th>
+                              <th class="thvideoaction" scope="col">Seçenekler</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -454,14 +454,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#videoEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -477,14 +477,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#videoEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -500,14 +500,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#videoEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -526,23 +526,23 @@
                         >
                           <thead class="tableheader">
                             <tr>
-                              <th scope="col">Your Social Links</th>
+                              <th scope="col">Tüm Sosyal Medya Bağlantıların</th>
                             </tr>
                           </thead>
-                          <thead class="thead-dark">
+                          <thead class="thead-light">
                             <tr>
                               <th class="thsociallink" scope="col">
-                                Social Link
+                                Sosyal Medya
                               </th>
-                              <th class="thsociallink" scope="col">Link</th>
+                              <th class="thsociallink" scope="col">Bağlantı</th>
                               <th class="thsociallink" scope="col">
-                                Created Date
+                                Oluşturma Tarihi
                               </th>
                               <th class="thsociallink" scope="col">
-                                Updated Date
+                                Güncellenme Tarihi
                               </th>
                               <th class="thsociallinkaction" scope="col">
-                                Actions
+                                Seçenekler
                               </th>
                             </tr>
                           </thead>
@@ -558,14 +558,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#socialLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -590,14 +590,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#socialLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -614,14 +614,14 @@
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#socialLinkEdit"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-edit"
                                     ><i class="fas fa-edit"></i
                                   ></a>
                                   <a
                                     type="button"
                                     data-toggle="modal"
                                     data-target="#delete"
-                                    class="btn btn-primary btn-sm linkbutton"
+                                    class="btn btn-primary btn-sm linkbutton-delete"
                                     ><i class="fas fa-trash"></i
                                   ></a>
                                 </div>
@@ -1535,103 +1535,13 @@ html {
   display: inline-block;
 }
 
-.btn-6,
-.buttonlink6 {
-  background: #c02e2e;
-  color: rgb(255, 255, 255);
-  line-height: 50px;
-  height: 50px;
-  width: 730px;
-  padding: 0;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-  text-decoration: none;
-  margin-bottom: 25px;
-}
-
-.btn-6 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-6:before,
-.btn-6:after {
-  position: absolute;
-  content: "";
-  height: 0%;
-  width: 2px;
-  background: #000;
-}
-
-.btn-6:before {
-  right: 0;
-  top: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6:after {
-  left: 0;
-  bottom: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6:hover {
-  color: #000;
-  background: #cead19;
-}
-
-.btn-6:hover:before {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6:hover:after {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6 span:before,
-.btn-6 span:after {
-  position: absolute;
-  content: "";
-  background: #000;
-}
-
-.btn-6 span:before {
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: 2px;
-  transition: all 500ms ease;
-}
-
-.btn-6 span:after {
-  right: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  transition: all 500ms ease;
-}
-
-.btn-6 span:hover:before {
-  width: 100%;
-}
-
-.btn-6 span:hover:after {
-  width: 100%;
-}
-
 .btn-9,
 .buttonlink9 {
   z-index: 2;
   transition: all 0.3s ease;
   overflow: hidden;
-  background: rgb(36, 196, 14);
-  color: rgb(255, 255, 255);
+  background: #3c66a5;
+  color: #ffffff;
   line-height: 45px;
   height: 45px;
   width: 200px;
@@ -1663,258 +1573,25 @@ html {
   height: 100%;
 }
 
-.btn-9:hover {
+.btn-9:hover,
+.buttonlink9:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-  color: #fff;
+  color: #3c66a5;
 }
 
 .btn-9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
-  background: #6529aa;
+  background: #ffffff;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
 
-.btn-13,
-.buttonlink13 {
-  background: rgb(80, 78, 78);
-  color: rgb(0, 183, 255);
-  z-index: 1;
-  line-height: 50px;
-  height: 50px;
-  width: 730px;
-  padding: 0;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-  text-decoration: none;
-  margin-bottom: 25px;
-}
-
-.btn-13:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: #ece6e0;
-  transition: all 0.3s ease;
-}
-
-.btn-13 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-13:hover {
-  color: #000;
-}
-
-.btn-13:hover:after {
-  top: 0;
-  height: 100%;
-}
-
-.btn-13:active {
-  top: 2px;
-}
-
-.sociallinks {
-  outline: none;
-  text-decoration: none;
-  border: none;
-  color: rgb(0, 0, 0);
-}
-.btn-13-edit {
-  background: rgb(10, 93, 202);
-  color: rgb(255, 255, 255);
-  z-index: 1;
-  height: 50px;
-  width: 100px;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-}
-
-.btn-13-edit:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: #e0e5ec;
-  transition: all 0.3s ease;
-}
-
-.btn-13-edit span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-13-edit:hover {
-  color: #000;
-}
-
-.btn-13-edit:hover:after {
-  top: 0;
-  height: 100%;
-}
-
-.btn-13-edit:active {
-  top: 2px;
-}
-
-.btn-6-create {
-  background: rgb(23, 219, 33);
-  color: rgb(255, 255, 255);
-  z-index: 1;
-  line-height: 100px;
-  height: 100px;
-  width: 200px;
-  padding: 0;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-  text-decoration: none;
-  margin-top: 50px;
-  margin-left: -110px;
-}
-
-.btn-6-create span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-6-create:before,
-.btn-6-create:after {
-  position: absolute;
-  content: "";
-  height: 0%;
-  width: 2px;
-  background: #000;
-}
-
-.btn-6-create:before {
-  right: 0;
-  top: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6-create:after {
-  left: 0;
-  bottom: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6-create:hover {
-  color: #000;
-  background: #ffffff;
-}
-
-.btn-6-create:hover:before {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6-create:hover:after {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6-create span:before,
-.btn-6-create span:after {
-  position: absolute;
-  content: "";
-  background: #000;
-}
-
-.btn-6-create span:before {
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: 2px;
-  transition: all 500ms ease;
-}
-
-.btn-6-create span:after {
-  right: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  transition: all 500ms ease;
-}
-
-.btn-6-create span:hover:before {
-  width: 100%;
-}
-
-.btn-6-create span:hover:after {
-  width: 100%;
-}
-
-.btn-13-create {
-  background: rgb(23, 115, 219);
-  color: rgb(255, 255, 255);
-  z-index: 1;
-  line-height: 100px;
-  height: 100px;
-  width: 200px;
-  padding: 0;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-  text-decoration: none;
-  margin-top: 50px;
-  margin-left: 80px;
-}
-
-.btn-13-create:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: #e0e5ec;
-  transition: all 0.3s ease;
-}
-
-.btn-13-create span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-13-create:hover {
-  color: #000;
-}
-
-.btn-13-create:hover:after {
-  top: 0;
-  height: 100%;
-}
 #photo {
   background: #17dbcb;
   color: rgb(255, 255, 255);
@@ -1934,7 +1611,7 @@ html {
   color: rgb(255, 255, 255);
 }
 .thtextaction {
-  width: 156px;
+  width: 157px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -1990,7 +1667,7 @@ html {
   color: rgb(255, 255, 255);
 }
 .thstandartlinkaction {
-  width: 156px;
+  width: 157px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -2019,7 +1696,7 @@ html {
   color: rgb(255, 255, 255);
 }
 .thsociallinkaction {
-  width: 156px;
+  width: 157px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -2048,7 +1725,7 @@ html {
 }
 
 .thvideoaction {
-  width: 195px;
+  width: 197px;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
@@ -2066,28 +1743,37 @@ html {
   padding-right: 5px;
 }
 table {
-  background-color: #a53c85;
+  background-color: #3c66a5;
 }
 thead {
   background-color: rgb(90, 90, 90);
 }
-.linkbutton {
+.linkbutton-edit {
   margin-right: 10px;
-  background-color: rgb(0, 0, 0);
-  border-color: #b619ae;
-  color: #e1306c;
+  background-color: #ffffff;
+  border-color: #2ec535;
+  color: #2ec535;
 }
 
-.linkbutton:hover {
+.linkbutton-edit:hover {
+  background-color: #2ec535;
+  border-color: #ffffff;
+  color:#ffffff;
+}
+
+.linkbutton-delete {
+  margin-right: 10px;
+  background-color: #ffffff;
+  border-color: #ca2b2b;
+  color: #ca2b2b;
+}
+
+.linkbutton-delete:hover {
   background-color: #ce2519;
-  border-color: #b619ae;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
-.linkbutton:hover:active {
-  background: blueviolet;
-  border-color: blueviolet;
-  color: #000;
-}
 .name {
   color: white;
 }
@@ -2095,7 +1781,7 @@ thead {
   color: rgb(0, 0, 0);
 }
 .tableheader {
-  color: #a53c85;
+  color: #000000;
   background-color: rgb(255, 255, 255);
 }
 .links {

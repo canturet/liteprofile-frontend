@@ -334,103 +334,13 @@ html {
   display: inline-block;
 }
 
-.btn-6,
-.buttonlink6 {
-  background: #c02e2e;
-  color: rgb(255, 255, 255);
-  line-height: 50px;
-  height: 50px;
-  width: 730px;
-  padding: 0;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-  text-decoration: none;
-  margin-bottom: 25px;
-}
-
-.btn-6 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-6:before,
-.btn-6:after {
-  position: absolute;
-  content: "";
-  height: 0%;
-  width: 2px;
-  background: #000;
-}
-
-.btn-6:before {
-  right: 0;
-  top: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6:after {
-  left: 0;
-  bottom: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6:hover {
-  color: #000;
-  background: #cead19;
-}
-
-.btn-6:hover:before {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6:hover:after {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6 span:before,
-.btn-6 span:after {
-  position: absolute;
-  content: "";
-  background: #000;
-}
-
-.btn-6 span:before {
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: 2px;
-  transition: all 500ms ease;
-}
-
-.btn-6 span:after {
-  right: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  transition: all 500ms ease;
-}
-
-.btn-6 span:hover:before {
-  width: 100%;
-}
-
-.btn-6 span:hover:after {
-  width: 100%;
-}
-
 .btn-9,
 .buttonlink9 {
   z-index: 2;
   transition: all 0.3s ease;
   overflow: hidden;
-  background: #a53c85;
-  color: rgb(255, 255, 255);
+  background: #3c66a5;
+  color: #ffffff;
   line-height: 50px;
   height: 50px;
   width: 730px;
@@ -443,7 +353,8 @@ html {
   margin-bottom: 25px;
 }
 
-.btn-9:after {
+.btn-9:after,
+.buttonlink9:after {
   position: absolute;
   content: " ";
   z-index: -1;
@@ -461,90 +372,45 @@ html {
   height: 100%;
 }
 
-.btn-9:hover {
+.btn-9:hover,
+.buttonlink9:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-  color: #fff;
+
+  color: #3c66a5;
 }
 
-.btn-9:hover:after {
+.btn-9:hover:after,
+.buttonlink9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
-  background: #6529aa;
+  background: #ffffff;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-}
-
-.btn-13,
-.buttonlink13 {
-  background: #000;
-  color: rgb(0, 183, 255);
-  z-index: 1;
-  line-height: 50px;
-  height: 50px;
-  width: 730px;
-  padding: 0;
-  border: none;
-  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
-    0 2px 6px 0 rgb(100 100 100 / 54%);
-  outline: none;
-  text-decoration: none;
-  margin-bottom: 25px;
-}
-
-.btn-13:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: #e0e5ec;
-  transition: all 0.3s ease;
-}
-
-.btn-13 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-13:hover {
-  color: #000;
-}
-
-.btn-13:hover:after {
-  top: 0;
-  height: 100%;
-}
-
-.btn-13:active {
-  top: 2px;
 }
 
 .sociallinks {
   outline: none;
   text-decoration: none;
   border: none;
-  color: #a53c85;
+  color: #3c66a5;
 }
 
 .linkbutton {
   margin-right: 10px;
-  background-color: #a53c85;
+  background-color: #3c66a5;
   border-color: rgb(255, 255, 255);
   color: #ffffff;
 }
 
 .linkbutton:hover {
-  background-color: blueviolet;
-  border-color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  border-color: #3c66a5;
+  color: #3c66a5;
 }
 
 .linkbutton:hover:active {
@@ -575,15 +441,17 @@ html {
 }
 .video {
   margin-bottom: 25px;
+  box-shadow: 0 2px 6px 0 rgb(100 100 100 / 65%),
+    0 2px 6px 0 rgb(100 100 100 / 54%);
 }
 .name {
-  color: #a53c85;
+  color: #000000;
 }
 .description {
   color: rgb(255, 255, 255);
 }
-.containermain{
-  margin-bottom:100px;
-  margin-top:35px; 
+.containermain {
+  margin-bottom: 100px;
+  margin-top: 35px;
 }
 </style>
