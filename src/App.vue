@@ -18,11 +18,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
-            <li class="nav-item">
-              <router-link to="/HomePage" class="nav-link">
-                Ana Sayfa
-              </router-link>
-            </li>
+        
             <li class="nav-item">
               <a href="/UserProfile" class="nav-link">Profil</a>
             </li>

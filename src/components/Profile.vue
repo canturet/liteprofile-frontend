@@ -339,8 +339,8 @@ html {
   z-index: 2;
   transition: all 0.3s ease;
   overflow: hidden;
-  background: #3c66a5;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
   line-height: 50px;
   height: 50px;
   width: 730px;
@@ -379,14 +379,14 @@ html {
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 
-  color: #3c66a5;
+  color: #ffffff;
 }
 
 .btn-9:hover:after,
 .buttonlink9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
   transform: scale(2) rotate(180deg);
-  background: #ffffff;
+  background: #3c66a5;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
@@ -402,15 +402,15 @@ html {
 
 .linkbutton {
   margin-right: 10px;
-  background-color: #3c66a5;
-  border-color: rgb(255, 255, 255);
-  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #3c66a5;
+  color: #3c66a5;
 }
 
 .linkbutton:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #3c66a5;
   border-color: #3c66a5;
-  color: #3c66a5;
+  color: #ffffff;
 }
 
 .linkbutton:hover:active {
