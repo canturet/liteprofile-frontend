@@ -1,4 +1,3 @@
-
 <template>
   <div class="back-to-top"></div>
 
@@ -95,28 +94,6 @@
               Seni aramak isteyenler senin hakkında kolayca bilgi sahibi
               olsunlar.
             </p>
-            
-          </div>
-        </div>
-      </div>
-      <!-- .container -->
-    </div>
-    <!-- .page-section -->
-
-    <div class="page-section counter-section">
-      <div class="container">
-        <div class="row align-items-center text-center">
-          <div class="col-lg-4">
-            <p>Aramıza Son 1 Ayda Yeni Katılanlar</p>
-            <h2><span class="number" data-number="2451"></span></h2>
-          </div>
-          <div class="col-lg-4">
-            <p>Toplam Kullanıcı Sayımız</p>
-            <h2><span class="number" data-number="10542"></span></h2>
-          </div>
-          <div class="col-lg-4">
-            <p>Beta</p>
-            <h2><span class="number" data-number="73"></span>%</h2>
           </div>
         </div>
       </div>
@@ -282,15 +259,14 @@
               <div class="header">
                 <div class="entry-footer">
                   <div class="post-author">
-                    Yeni Ekleyeceğimiz Özelliklerle Kullanıcıları Daha Kolay Keşfedebileceksin.
+                    Yeni Ekleyeceğimiz Özelliklerle Kullanıcıları Daha Kolay
+                    Keşfedebileceksin.
                   </div>
                 </div>
               </div>
               <div class="body">
                 <div class="post-title">
-                  <a
-                    >Yeni arama sayfası geliyor</a
-                  >
+                  <a>Yeni arama sayfası geliyor</a>
                 </div>
               </div>
             </div>
@@ -311,12 +287,14 @@
                   <a href="blog-single.html">Kart şeklinde profiller.</a>
                 </div>
                 <div class="post-excerpt">
-                  Kullanıcıların profilleri küçük kart şeklinde de keşfedilebilecek.
+                  Kullanıcıların profilleri küçük kart şeklinde de
+                  keşfedilebilecek.
                 </div>
               </div>
               <div class="footer">
                 <a href="blog-single.html"
-                  >Profili görüntüle <span class="mai-chevron-forward text-sm"></span
+                  >Profili görüntüle
+                  <span class="mai-chevron-forward text-sm"></span
                 ></a>
               </div>
             </div>
@@ -342,7 +320,8 @@
               </div>
               <div class="footer">
                 <a href="blog-single.html"
-                  >Profili görüntüle <span class="mai-chevron-forward text-sm"></span
+                  >Profili görüntüle
+                  <span class="mai-chevron-forward text-sm"></span
                 ></a>
               </div>
             </div>
@@ -368,7 +347,8 @@
               </div>
               <div class="footer">
                 <a href="blog-single.html"
-                  >Profili görüntüle <span class="mai-chevron-forward text-sm"></span
+                  >Profili görüntüle
+                  <span class="mai-chevron-forward text-sm"></span
                 ></a>
               </div>
             </div>
@@ -376,35 +356,6 @@
         </div>
       </div>
       <!-- .container -->
-    </div>
-    <!-- .page-section -->
-
-    <div class="page-section client-section">
-      <div class="container-fluid">
-        <div
-          class="
-            row row-cols-2 row-cols-md-3 row-cols-lg-5
-            justify-content-center
-          "
-        >
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/airbnb.png" alt="" />
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/google.png" alt="" />
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/stripe.png" alt="" />
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/paypal.png" alt="" />
-          </div>
-          <div class="item wow zoomIn">
-              <img src="../assets/img/clients/mailchimp.png" alt="" />
-            </div>
-        </div>
-      </div>
-      <!-- .container-fluid -->
     </div>
     <!-- .page-section -->
   </main>
