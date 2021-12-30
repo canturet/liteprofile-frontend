@@ -14,8 +14,9 @@
               <div class="input-group">
                 <input type="search" class="form-control" />
                 <span class="input-group-addon"
-                  ><input type="submit" value="Ara" class="btn btn-primary"
-                /></span>
+                  ><input type="submit" class="btn btn-primary" value="Ara">
+                </span>
+               
               </div>
             </form>
           </div>
@@ -130,7 +131,7 @@
     <div class="page-section">
       <div class="container">
         <div class="text-center wow fadeInUp">
-          <div class="subhead">Bizlere Katıl</div>
+          <div class="subhead">BİZE KATIL</div>
           <h2 class="title-section">
             Senin <span class="marked">Profilin</span> bizim için önemli
           </h2>
@@ -141,13 +142,13 @@
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>Kolayca Tüm İçeriklere Ulaş</h5>
-            <p>Aradığın kişiyinin tüm içeriklerine tek seferde kolayca ulaş.</p>
+            <p>Aradığın kişinin tüm içeriklerine kolayca ulaş.</p>
           </div>
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
-            <h5>İçeriklerini Tek Yerden Yönlendir</h5>
+            <h5>İçeriklerini Tek Yerden Yönet</h5>
             <p>
-              Profiline tüm profillerini ve içeriklerini ekle. Daha kolay
+              Profiline tüm sosyal medya profillerini ve içeriklerini ekle. Daha kolay
               ulaşılabilirsin.
             </p>
           </div>
@@ -247,7 +248,7 @@
     <div class="page-section border-top">
       <div class="container">
         <div class="text-center wow fadeInUp">
-          <div class="subhead">Yeni Özellikler Yolda</div>
+          <div class="subhead">YENİ ÖZELLİKLER YOLDA</div>
           <h2 class="title-section">
             Kullanıcıları keşfet <span class="marked">Yakında...</span>
           </h2>
@@ -371,6 +372,11 @@ export default {
     return {
       content: "",
     };
+  },
+    methods: {
+    searchUser: function () {
+    this.$router.push("/path");
+    },
   },
   mounted() {
     UserService.getPublicContent().then(

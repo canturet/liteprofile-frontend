@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-12">
+  <div class="col-md-12 mb-5">
     <div class="card card-container">
         <a class="navbar-brand title"
           >Lite<span class="text-primary">Profile</span></a
@@ -66,7 +66,7 @@ export default {
   },
   created() {
     if (this.loggedIn) {
-      this.$router.push("/profile");
+      this.$router.push("/");
     }
   },
   methods: {
@@ -75,7 +75,7 @@ export default {
 
       this.$store.dispatch("auth/login", user).then(
         () => {
-          this.$router.push("/profile");
+          this.$router.push("/");
         },
         (error) => {
           this.loading = false;

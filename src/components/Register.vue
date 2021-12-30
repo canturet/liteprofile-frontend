@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-12">
+  <div class="col-md-12 mb-2">
     <div class="card card-container">
       <a class="navbar-brand title"
         >Lite<span class="text-primary">Profile</span></a

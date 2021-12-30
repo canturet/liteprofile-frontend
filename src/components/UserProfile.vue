@@ -26,39 +26,35 @@
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
                 <div class="mt-5 mb-3">
-                  <h4 class="name">John Doe</h4>
-                  <b class="description">Full Stack Developer</b>
+                  <h4 class="name">{{ username }}</h4>
+                  <b class="description">{{ biographyDescription }}</b>
                 </div>
                 <div class="wrapper">
-                  <div class="icon facebook">
-                    <div class="tooltip">Facebook</div>
-                    <a href="https:\\www.google.com"
-                      ><span><i class="fa fa-facebook sociallinks"></i></span
-                    ></a>
-                  </div>
-                  <div class="icon twitter">
-                    <div class="tooltip">Twitter</div>
-                    <a href="https:\\www.google.com"
-                      ><span><i class="fa fa-twitter sociallinks"></i></span
-                    ></a>
-                  </div>
-                  <div class="icon instagram">
-                    <div class="tooltip">Instagram</div>
-                    <a href="https:\\www.google.com"
-                      ><span><i class="fa fa-instagram sociallinks"></i></span
-                    ></a>
-                  </div>
-                  <div class="icon github">
-                    <div class="tooltip">Github</div>
-                    <a href="https:\\www.google.com"
-                      ><span><i class="fa fa-github sociallinks"></i></span
-                    ></a>
-                  </div>
-                  <div class="icon youtube">
-                    <div class="tooltip">Youtube</div>
-                    <a class="sociallinks" href="https:\\www.google.com"
-                      ><span><i class="fa fa-youtube"></i></span
-                    ></a>
+                  <div v-for="socialLink in socialLinks" :key="socialLink.id">
+                    <div
+                      class="icon facebook"
+                      v-if="socialLink.platformId == 1"
+                    >
+                      <div class="tooltip">Facebook</div>
+                      <a :href="socialLink.url"
+                        ><span><i class="fa fa-facebook sociallinks"></i></span
+                      ></a>
+                    </div>
+                    <div
+                      class="icon instagram"
+                      v-if="socialLink.platformId == 2"
+                    >
+                      <div class="tooltip">Instagram</div>
+                      <a :href="socialLink.url"
+                        ><span><i class="fa fa-instagram sociallinks"></i></span
+                      ></a>
+                    </div>
+                    <div class="icon github" v-if="socialLink.platformId == 3">
+                      <div class="tooltip">Github</div>
+                      <a :href="socialLink.url"
+                        ><span><i class="fa fa-github sociallinks"></i></span
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -66,67 +62,69 @@
             <vue-collapsible-panel-group
               class="collapsecontainer card"
               base-color="#ffffff"
+              v-for="text in texts"
+              :key="text.id"
             >
               <vue-collapsible-panel :expanded="false">
-                <template #title> Hakkımda kısaca </template>
+                <template #title> {{ text.title }} </template>
                 <template #content>
                   <div class="accordioncontent">
-                    <div class="accordiontext">Panel A Content</div>
+                    <div class="accordiontext">{{ text.message }}</div>
 
                     <hr />
                     <div class="accordionbottom">
-                      <div class="username">korayaks</div>
-                      <div class="date">Created Date: 18.12.2021</div>
+                      <div class="username">{{ username }}</div>
+                      <div class="date">{{ text.createdDate }}</div>
                     </div>
                     <br /></div
                 ></template>
               </vue-collapsible-panel>
             </vue-collapsible-panel-group>
-            <vue-collapsible-panel-group
-              class="collapsecontainer card"
-              base-color="#ffffff"
-            >
-              <vue-collapsible-panel :expanded="false">
-                <template #title
-                  ><a
-                    type="button"
-                    class="btn btn-primary btn-sm linkbutton"
-                    href="https:\\www.google.com"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                  Hakkımda kısaca
-                </template>
-                <template #content>
-                  <div class="accordioncontent">
-                    <div class="accordiontext">
-                      Panel A Content Panel A Content Panel A Content Panel A
-                      Content Panel A Content Panel A Content Panel A Content
-                      Panel A Content Panel A Content Panel A Content Panel A
-                      Content Panel A Content Panel A Content Panel A Content
-                      Panel A Content Panel A Content Panel A Content Panel A
-                      Content Panel
-                    </div>
-
-                    <hr />
-                    <div class="accordionbottom">
-                      <div class="username">korayaks</div>
-                      <div class="date">Created Date: 18.12.2021</div>
-                    </div>
-                    <br />
-                  </div>
-                </template>
-              </vue-collapsible-panel>
-            </vue-collapsible-panel-group>
-            <button class="custom-btn btn-9">
-              <a class="buttonlink9" href="https:\\www.google.com"
-                ><span>Read More</span></a
+            <div v-for="customLink in customLinks" :key="customLink.id">
+              <vue-collapsible-panel-group
+                v-if="customLink.description"
+                class="collapsecontainer card"
+                base-color="#ffffff"
               >
-            </button>
-            <div class="embed-responsive embed-responsive-16by9 video mb-5">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-              ></iframe>
+                <vue-collapsible-panel :expanded="false">
+                  <template #title
+                    ><a
+                      type="button"
+                      class="btn btn-primary btn-sm linkbutton"
+                      :href="customLink.url"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    {{ customLink.title }}
+                  </template>
+                  <template #content>
+                    <div class="accordioncontent">
+                      <div class="accordiontext">
+                        {{ customLink.description }}
+                      </div>
+
+                      <hr />
+                      <div class="accordionbottom">
+                        <div class="username">{{ username }}</div>
+                        <div class="date">{{ customLink.createdDate }}</div>
+                      </div>
+                      <br />
+                    </div>
+                  </template>
+                </vue-collapsible-panel>
+              </vue-collapsible-panel-group>
+
+              <button class="custom-btn btn-9" v-if="!customLink.description">
+                <a class="buttonlink9" :href="customLink.url"
+                  ><span>{{ customLink.title }}</span></a
+                >
+              </button>
+            </div>
+            <div
+              class="embed-responsive embed-responsive-16by9 video mb-5"
+              v-for="video in videos"
+              :key="video.url"
+            >
+              <iframe class="embed-responsive-item" :src="video.url"></iframe>
             </div>
           </div>
           <div class="col-sm-2"></div>
@@ -137,9 +135,46 @@
 </template>
 <script>
 import "@dafcoe/vue-collapsible-panel/dist/vue-collapsible-panel.css";
-
+import axios from "axios";
 export default {
   name: "UserProfile",
+  data: function () {
+    return {
+      biographyDescription: "",
+      customLinks: [],
+      texts: [],
+      videos: [],
+      socialLinks: [],
+      username: "",
+      x: "",
+    };
+  },
+  created: function () {
+    this.username = this.$route.params.username;
+    const vm = this;
+    console.log(vm);
+    axios
+      .get("http://localhost:8081/api/user/" + this.$route.params.username)
+      .then(function (response) {
+        let data = response.data.body;
+        vm.biographyDescription = data.biography.description;
+
+        data.customLinks.forEach((value) => {
+          vm.customLinks.push(value);
+        });
+        data.socialLinks.forEach((value) => {
+          vm.socialLinks.push(value);
+        });
+        data.texts.forEach((value) => {
+          vm.texts.push(value);
+        });
+
+        data.videos.forEach((value) => {
+          vm.videos.push(value);
+        });
+      })
+      .catch(function () {});
+  },
 };
 </script>
 <style scoped>
