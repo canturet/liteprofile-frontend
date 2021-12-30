@@ -12,9 +12,9 @@
             <h5>Başka kullanıcıları arayabilirsin</h5>
             <form action="#">
               <div class="input-group">
-                <input type="search" class="form-control" />
+                <input type="search" v-model="username" class="form-control" />
                 <span class="input-group-addon"
-                  ><input type="submit" class="btn btn-primary" value="Ara">
+                  ><input type="submit" class="btn btn-primary" value="Ara" @click="search()">
                 </span>
                
               </div>
@@ -371,11 +371,12 @@ export default {
   data() {
     return {
       content: "",
+      username:"",
     };
   },
     methods: {
-    searchUser: function () {
-    this.$router.push("/path");
+    search: function () {
+    this.$router.push("/UserProfile/"+this.username);
     },
   },
   mounted() {
